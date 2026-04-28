@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenGap Agents</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">0G Open Agents Framework</p>
+          <h1>Failed agent executions become validated examples.</h1>
+          <p class="lede">OpenGap captures coding-agent failures, generates a runnable fix, validates it, stores the artifact on 0G Storage, and records provenance on 0G Chain.</p>
+        </div>
+        <div class="status-panel" aria-label="Demo status">
+          <span class="pulse"></span>
+          <div>
+            <strong id="status-title">Loading demo state</strong>
+            <p id="status-copy">Reading .opengap artifacts from the local run.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="timeline" aria-label="OpenGap execution loop">
+        <article class="step" data-key="execution">
+          <span>01</span>
+          <h2>Failed Execution</h2>
+          <p id="execution"></p>
+        </article>
+        <article class="step" data-key="gap">
+          <span>02</span>
+          <h2>Gap</h2>
+          <p id="gap"></p>
+        </article>
+        <article class="step" data-key="artifact">
+          <span>03</span>
+          <h2>Generated Artifact</h2>
+          <p id="artifact"></p>
+        </article>
+        <article class="step" data-key="validation">
+          <span>04</span>
+          <h2>Validation</h2>
+          <p id="validation"></p>
+        </article>
+        <article class="step" data-key="publish">
+          <span>05</span>
+          <h2>0G Publish</h2>
+          <p id="publish"></p>
+        </article>
+        <article class="step" data-key="validated">
+          <span>06</span>
+          <h2>Future Reuse</h2>
+          <p id="validated"></p>
+        </article>
+      </section>
+
+      <section class="proof">
+        <div>
+          <h2>Provenance Record</h2>
+          <pre id="record">{}</pre>
+        </div>
+        <div>
+          <h2>0G Links</h2>
+          <a id="registry-link" href="#" target="_blank" rel="noreferrer">Registry transaction</a>
+          <a href="https://chainscan-galileo.0g.ai/address/0x59001ae38098a1ba05cc2121554eAa163DF08994" target="_blank" rel="noreferrer">OpenGapRegistry</a>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
+

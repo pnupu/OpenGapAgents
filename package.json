@@ -1,0 +1,28 @@
+{
+  "name": "opengap-agents",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "opengap": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "demo": "npm run build && node dist/cli.js demo",
+    "demo:ui": "npm run build && node dist/server.js",
+    "test": "npm run build && node tests/cli-loop.test.mjs",
+    "chain:build": "forge build",
+    "chain:deploy:0g": "npm run chain:build && node scripts/deploy-registry.mjs",
+    "chain:record": "node scripts/record-improvement.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  },
+  "dependencies": {
+    "@0gfoundation/0g-ts-sdk": "^1.2.6",
+    "dotenv": "^17.4.2",
+    "ethers": "^6.13.1"
+  }
+}
