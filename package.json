@@ -11,6 +11,7 @@
     "check": "tsc -p tsconfig.json --noEmit",
     "demo": "npm run build && node dist/cli.js demo",
     "demo:ui": "npm run build && node dist/server.js",
+    "assets:capture": "node scripts/capture-submission-assets.mjs",
     "test": "npm run build && node tests/cli-loop.test.mjs",
     "chain:build": "forge build",
     "chain:deploy:0g": "npm run chain:build && node scripts/deploy-registry.mjs",
@@ -18,6 +19,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
+    "playwright": "^1.59.1",
     "typescript": "^5.9.0"
   },
   "dependencies": {

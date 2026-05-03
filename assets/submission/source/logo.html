@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        width: 512px;
+        height: 512px;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at 26% 18%, rgba(184, 255, 92, 0.28), transparent 170px),
+          linear-gradient(145deg, #0d0f0b, #10180f 58%, #07100d);
+        font-family: "Avenir Next", "Segoe UI", sans-serif;
+      }
+      .mark {
+        position: relative;
+        width: 342px;
+        height: 342px;
+        border: 2px solid #38412d;
+        border-radius: 54px;
+        background: linear-gradient(180deg, #202719, #141812);
+        box-shadow: 0 40px 90px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(244, 241, 232, 0.04);
+        overflow: hidden;
+      }
+      .mark::before {
+        content: "";
+        position: absolute;
+        inset: 42px;
+        border-radius: 50%;
+        border: 18px solid #b8ff5c;
+        border-right-color: transparent;
+        transform: rotate(-35deg);
+      }
+      .mark::after {
+        content: "";
+        position: absolute;
+        inset: 94px;
+        border-radius: 34px;
+        background: #0d0f0b;
+        border: 2px solid #6df0c2;
+        box-shadow: 0 0 0 12px rgba(109, 240, 194, 0.08);
+      }
+      .arrow {
+        position: absolute;
+        right: 58px;
+        top: 126px;
+        width: 0;
+        height: 0;
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-left: 44px solid #b8ff5c;
+        transform: rotate(-35deg);
+      }
+      .og {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -46%);
+        z-index: 2;
+        color: #f4f1e8;
+        font-size: 74px;
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mark">
+      <div class="arrow"></div>
+      <div class="og">OG</div>
+    </div>
+  </body>
+</html>
+

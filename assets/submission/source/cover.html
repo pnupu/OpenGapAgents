@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        width: 1280px;
+        height: 720px;
+        margin: 0;
+        color: #f4f1e8;
+        background:
+          radial-gradient(circle at 18% 8%, rgba(184, 255, 92, 0.2), transparent 360px),
+          radial-gradient(circle at 82% 34%, rgba(109, 240, 194, 0.12), transparent 320px),
+          linear-gradient(135deg, #0d0f0b, #10160f 50%, #07100d);
+        font-family: "Avenir Next", "Segoe UI", sans-serif;
+        overflow: hidden;
+      }
+      .frame {
+        display: grid;
+        grid-template-columns: 1fr 460px;
+        gap: 48px;
+        width: 100%;
+        height: 100%;
+        padding: 72px;
+      }
+      .eyebrow {
+        color: #b8ff5c;
+        font-size: 18px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 0 0 20px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 86px;
+        line-height: 0.92;
+        max-width: 760px;
+        letter-spacing: 0;
+      }
+      p {
+        margin: 28px 0 0;
+        max-width: 700px;
+        color: #a9b19d;
+        font-size: 25px;
+        line-height: 1.42;
+      }
+      .panel {
+        align-self: center;
+        border: 1px solid #38412d;
+        border-radius: 10px;
+        background: linear-gradient(180deg, #202719, #141812);
+        box-shadow: 0 34px 90px rgba(0, 0, 0, 0.35);
+        padding: 28px;
+      }
+      .step {
+        display: grid;
+        grid-template-columns: 44px 1fr;
+        gap: 16px;
+        align-items: center;
+        padding: 18px 0;
+        border-bottom: 1px solid #38412d;
+      }
+      .step:last-child { border-bottom: 0; }
+      .num {
+        width: 44px;
+        height: 44px;
+        display: grid;
+        place-items: center;
+        border-radius: 8px;
+        color: #0d0f0b;
+        background: #b8ff5c;
+        font-weight: 900;
+      }
+      .label {
+        font-size: 20px;
+        font-weight: 750;
+      }
+      .sub {
+        margin-top: 4px;
+        color: #a9b19d;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <section>
+        <p class="eyebrow">OpenGap Agents · 0G Open Agents</p>
+        <h1>Agent failures become reusable examples.</h1>
+        <p>OpenGap captures failed coding-agent executions, generates a runnable fix, validates it, stores the artifact on 0G Storage, and records provenance on 0G Chain.</p>
+      </section>
+      <section class="panel">
+        <div class="step"><div class="num">1</div><div><div class="label">Trace failure</div><div class="sub">Task, docs, command, error</div></div></div>
+        <div class="step"><div class="num">2</div><div><div class="label">Generate fix</div><div class="sub">TypeScript example artifact</div></div></div>
+        <div class="step"><div class="num">3</div><div><div class="label">Validate</div><div class="sub">Deterministic tsc proof</div></div></div>
+        <div class="step"><div class="num">4</div><div><div class="label">Publish on 0G</div><div class="sub">Storage root + registry tx</div></div></div>
+      </section>
+    </div>
+  </body>
+</html>
+
