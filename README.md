@@ -86,6 +86,8 @@ Start here for product context:
 - [ETHGlobal prize fit](wiki/hackathon/ethglobal-0g-prize-fit.md)
 - [Wiki operating rules](AGENTS.md)
 - [Architecture](docs/architecture.md)
+- [0G runbook](docs/0g-runbook.md)
+- [Demo script](docs/demo-script.md)
 - [Example agent](examples/README.md)
 - [Submission draft](SUBMISSION.md)
 
