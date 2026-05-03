@@ -12,6 +12,7 @@
     "demo": "npm run build && node dist/cli.js demo",
     "demo:ui": "npm run build && node dist/server.js",
     "assets:capture": "node scripts/capture-submission-assets.mjs",
+    "video:create": "node scripts/create-demo-video.mjs",
     "test": "npm run build && node tests/cli-loop.test.mjs",
     "chain:build": "forge build",
     "chain:deploy:0g": "npm run chain:build && node scripts/deploy-registry.mjs",

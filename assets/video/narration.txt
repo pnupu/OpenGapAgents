@@ -1,0 +1,15 @@
+OpenGap Agents is a framework for making coding agents learn from execution failures.
+
+Today, developer ecosystems increasingly add AI docs assistants. But when a coding agent follows documentation and fails, that failure usually disappears. The agent may hit a missing SDK example, call a method that does not exist, or fail to compile. The next agent repeats the same mistake.
+
+OpenGap turns that failure into a reusable improvement. The loop starts with a trace: what task the agent tried, which docs it used, what command it ran, and what error it saw. OpenGap classifies the failure as a gap when a clearer doc, runnable example, or agent skill would have prevented it.
+
+Then OpenGap generates a targeted artifact. In this demo, the artifact is a TypeScript example for uploading an agent artifact to 0G Storage. The generated example is not accepted on faith. OpenGap validates it with a deterministic TypeScript compile step and records the validation result.
+
+After validation passes, OpenGap publishes the artifact bundle to 0G Storage. The bundle includes the trace, gap, generated example, compute metadata, and validation proof. OpenGap also records a provenance commitment on 0G Galileo through the OpenGapRegistry contract.
+
+The important part is what happens next. OpenGap indexes the validated artifact, so future coding agents retrieve the working example before falling back to raw docs. That changes the outcome: a failed execution becomes a validated example future agents can reuse.
+
+The project is built as a TypeScript CLI-first framework with provider adapters. 0G Storage and 0G Chain are live on Galileo testnet. Compute is represented by a provider interface and local compute event in this demo, ready to swap to live 0G Compute.
+
+OpenGap is not just another docs chatbot. It is a feedback layer between coding agents and developer docs: failed execution, generated fix, validation, 0G provenance, and future reuse.
